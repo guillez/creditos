@@ -25,7 +25,13 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 	Route::resource('bancos', 'BancosController');
 
 
+
 	Route::get('proveedores/data', 'ProveedoresController@anyData')->name('proveedores.data');
     Route::get('proveedores/index', 'ProveedoresController@index');
 	Route::resource('proveedores', 'ProveedoresController');	
+    
+    Route::get('clasificacioncuentas/data', 'ClasificacionCuentasController@anyData')->name('clasificacioncuentas.data');
+   // Route::get('clasificacioncuentas/index', 'ClasificacionCuentasController@index');
+	Route::resource('clasificacioncuentas', 'ClasificacionCuentasController');
+
 });
