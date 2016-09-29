@@ -66,7 +66,19 @@
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
-                        </li>                        
+                        </li> 
+                         <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Clasif. Cuentas<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="{{ route('clasificacioncuentas.index')}}">Listado de Clasif. de Cuentas</a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('clasificacioncuentas.create')}}">Nueva Clasif. de Cuenta</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>                           
                         <li>
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
