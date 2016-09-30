@@ -12,7 +12,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url ('') }}">AELF - UCU | Sistema de Contable</a>
+                <a class="navbar-brand" href="{{ url ('') }}">Creditos | Si.Cre.</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -41,49 +41,29 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li {{ (Request::is('/') ? 'class="active"' : '') }}>
-                            <a href="{{ url ('') }}"><i class="fa fa-dashboard fa-fw"></i> Escritorio</a>
+                            <a href="{{ url ('') }}"><i class="fa fa-file-text-o fa-fw"></i> Cartelera</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Bancos<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Orientaciones<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="{{ route('bancos.index')}}">Listado de Bancos</a>
+                                    <a href="{{ route('bancos.index')}}">Tipos de Créditos</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('bancos.create')}}">Nuevo Banco</a>
+                                    <a href="{{ route('bancos.create')}}">Tipos de Empresas</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Proveedores<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="{{ route('proveedores.index')}}">Listado de Proveedores</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('proveedores.create')}}">Nuevo Proveedor</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li> 
-                         <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Clasif. Cuentas<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="{{ route('clasificacioncuentas.index')}}">Listado de Clasif. de Cuentas</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('clasificacioncuentas.create')}}">Nueva Clasif. de Cuenta</a>
-                                </li>
-                            </ul>
+
+   
                             <!-- /.nav-second-level -->
                         </li>                           
                         <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Archivos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li {{ (Request::is('*blank') ? 'class="active"' : '') }}>
-                                    <a href="{{ url ('blank') }}">Blank Page</a>
+                                    <a href="{{ url ('blank') }}">Listado PDF</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
